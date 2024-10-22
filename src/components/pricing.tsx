@@ -54,7 +54,7 @@ export default function Pricing() {
       buttonText: "Message Us",
       bgColor: "bg-emerald-600",
       hoverColor: "hover:bg-emerald-700",
-      href: "https://api.whatsapp.com/send?phone=15551234567",
+      href: "https://api.whatsapp.com/send?phone=780079095",
     },
     {
       icon: <Mail className="w-6 h-6" />,
