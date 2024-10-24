@@ -118,63 +118,7 @@ export default function Pricing() {
           </div>
         ))}
       </div>
-      {/* <div>
-        <div className="mt-16 text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900">
-            Get Started Today!
-          </h2>
-          <p className="mt-4 max-w-2xl mx-auto text-2xl text-gray-600">
-            Ready to simplify your GST processes? Select the plan that best
-            suits your needs and start your journey with GST Assist.
-          </p>
-          <div className="mt-6">
-            <a
-              href="https://www.gstprime.co.in"
-              className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 mr-4"
-            >
-              Start Free Trial
-            </a>
-          </div>
-          <p className="mt-6 text-base text-gray-500">
-            Need Help Choosing? Contact our team on{" "}
-            <a
-              href="tel:780079095"
-              className="text-blue-400 hover:text-blue-700"
-            >
-              Phone &nbsp;
-            </a>
-            <a
-              href="https://api.whatsapp.com/send?phone=15551234567"
-              className="text-blue-400 hover:text-green-500"
-            >
-              Whatsapp{" "}
-            </a>
-            , for personalized assistance to find the perfect plan for your
-            business!
-          </p>
-        </div>
-      </div> */}
-      {/* 
-      Footer Type Section
-      <div className="bg-blue-600 text-white py-16 px-4 rounded-t-lg mx-4 opacity-90">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            Ready to Transform Your Business?
-          </h2>
-          <p className="text-xl mb-8 opacity-90">
-            Join thousands of businesses that trust our platform for their daily
-            operations.
-          </p>
-          <div className="flex gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
-              Start Free Trial
-            </button>
-            <button className="border-2 border-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
-              Contact Sales
-            </button>
-          </div>
-        </div>
-      </div> */}
+
       {/* Contact Section */}
       <div className="bg-gray-800 text-white py-16 px-4 rounded-t-lg mx-4 my-4">
         <div className="max-w-6xl mx-auto">

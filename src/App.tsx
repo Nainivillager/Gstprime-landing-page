@@ -5,7 +5,10 @@ import Carousel from "./components/carousel";
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-b from-white to-blue-50">
+      <div
+        className="bg-custom-radial
+      "
+      >
         <LandingPage />
         <Carousel />
         <Pricing />
