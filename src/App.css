@@ -17,3 +17,9 @@
 .animate-bounce-slow {
   animation: bounce-slow 2s infinite;
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
