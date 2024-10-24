@@ -41,7 +41,7 @@ export default function Pricing() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      description: "Speak directly with support team",
+      description: "Speak directly with Us",
       buttonText: "Call Now",
       bgColor: "bg-green-600",
       hoverColor: "hover:bg-green-700",
@@ -68,16 +68,20 @@ export default function Pricing() {
   ];
 
   return (
-    <div>
+    <div className=" font-sans md:font-serif">
       <div className="text-3xl font-bold text-center mb-6 text-gray-900 ">
         Pick Your Perfect Plan
       </div>
-      <div className="text-xl text-gray-500  text-center m-2 px-8">
+      <div className="text-xl text-gray-500  text-center m-2 px-16">
         At GST Prime, we simplify your GST-related needs with tailored solutions
-        for businesses of all sizes. Whether you're a freelancer, a growing
+        for businesses of all sizes.{" "}
+        <div>
+          Explore our pricing plans below to find the perfect fit for your
+          business.
+        </div>
+        {/* Whether you're a freelancer, a growing
         small business, or a large enterprise, our services are designed to
-        streamline your GST invoicing, filing, and compliance. Explore our
-        pricing plans below to find the perfect fit for your business.
+        streamline your GST invoicing, filing, and compliance. */}
       </div>
       {/* Pricing  Plans Cards*/}
       <div className="container mx-auto px-4 py-4 pb-0  text-3xl text-center font-bold text-green-500 ">
@@ -93,7 +97,7 @@ export default function Pricing() {
       <div className="flex flex-col lg:flex-row justify-center items-stretch gap-6 px-4 py-2">
         {pricingData.map((plans) => (
           <div className="flex flex-col border-2 border-gray-300 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden w-full lg:w-1/3 max-w-sm mx-auto">
-            <div className="bg-gray-100 p-6 text-center">
+            <div className="bg-orange-100 p-6 text-center">
               <h2 className="text-2xl font-bold text-gray-800 mb-2">
                 {plans.plan}
               </h2>
@@ -102,7 +106,7 @@ export default function Pricing() {
                 {plans.price}
               </h4>
             </div>
-            <div className="flex-grow p-6 space-y-4">
+            <div className="flex-grow p-6 space-y-4 border-b-indigo-200">
               <p>{plans.invoices}</p>
               <p>{plans.filing}</p>
               <p>{plans.mobileSupport}</p>
@@ -110,7 +114,7 @@ export default function Pricing() {
               <p>{plans.consultancy}</p>
               <p>{plans.other}</p>
             </div>
-            <div className="p-6 bg-gray-100">
+            <div className="p-6 bg-orange-100">
               <button className="w-full py-2 px-4 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg transition-colors duration-200">
                 Choose Plan
               </button>

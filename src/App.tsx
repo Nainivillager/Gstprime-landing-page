@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div
-        className="bg-custom-radial
+        className=" bg-slate-100
       "
       >
         <LandingPage />
