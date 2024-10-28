@@ -54,7 +54,7 @@ export default function Pricing() {
       buttonText: "Message Us",
       bgColor: "bg-emerald-600",
       hoverColor: "hover:bg-emerald-700",
-      href: "https://api.whatsapp.com/send?phone=8430010509",
+      href: "https://api.whatsapp.com/send?phone=",
     },
     {
       icon: <Mail className="w-6 h-6" />,
@@ -79,9 +79,6 @@ export default function Pricing() {
           Explore our pricing plans below to find the perfect fit for your
           business.
         </div>
-        {/* Whether you're a freelancer, a growing
-        small business, or a large enterprise, our services are designed to
-        streamline your GST invoicing, filing, and compliance. */}
       </div>
       {/* Pricing  Plans Cards*/}
       <div className="container mx-auto px-4 py-4 pb-0  text-3xl text-center font-bold text-green-500 ">

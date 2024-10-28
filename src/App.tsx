@@ -1,7 +1,7 @@
 import "./App.css";
-import LandingPage from "./components/landingPage";
+import Features from "./components/features";
 import Pricing from "./components/pricing";
-import Carousel from "./components/carousel";
+import CustomerFeedbackCarousel from "./components/customerFeedbackCarousel";
 function App() {
   return (
     <>
@@ -9,9 +9,9 @@ function App() {
         className=" bg-slate-100
       "
       >
-        <LandingPage />
-        <Carousel />
+        <Features />
         <Pricing />
+        <CustomerFeedbackCarousel />
       </div>
     </>
   );
