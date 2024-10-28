@@ -5,10 +5,7 @@ import CustomerFeedbackCarousel from "./components/customerFeedbackCarousel";
 function App() {
   return (
     <>
-      <div
-        className=" bg-slate-100
-      "
-      >
+      <div className=" bg-slate-100">
         <Features />
         <Pricing />
         <CustomerFeedbackCarousel />

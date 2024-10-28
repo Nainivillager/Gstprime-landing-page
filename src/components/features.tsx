@@ -1,51 +1,61 @@
 import {
-  BookOpen,
-  ClipboardList,
-  FileText,
-  ShoppingBag,
-  Truck,
-  Users,
+  Receipt,
+  Boxes,
+  LayoutDashboard,
+  Receipt as ReceiptVoucher,
+  TrendingUp,
+  PieChart,
 } from "lucide-react";
 
 const LandingPage = () => {
   const features = [
     {
-      icon: <FileText className="w-8 h-8 text-blue-600" />,
-      title: "GST Invoice Generation",
+      icon: (
+        <Receipt className="w-8 h-8 text-blue-600 transition-all duration-300 group-hover:w-10 group-hover:h-10 group-hover:text-blue-700" />
+      ),
+      title: "GST Invoices for Both Product and Services",
       description:
-        "Create professional invoices with automatic calculations for taxes, freight charges, and discounts. Supports multiple invoice types and e-commerce transactions.",
-    },
-
-    {
-      icon: <ShoppingBag className="w-8 h-8 text-blue-600" />,
-      title: "Product Management",
-      description:
-        "Add and manage your product catalog with ease. Set up products once with details like HSN codes, tax rates, and pricing for seamless invoice generation.",
+        "Generate and manage invoices effortlessly for both products and services, ensuring seamless transactions and accurate record-keeping.",
     },
     {
-      icon: <Users className="w-8 h-8 text-blue-600" />,
-      title: "Customer & Vendor Management",
+      icon: (
+        <Boxes className="w-8 h-8 text-blue-600 transition-all duration-300 group-hover:w-10 group-hover:h-10 group-hover:text-blue-700" />
+      ),
+      title: "Inventory Management",
       description:
-        "Maintain comprehensive databases of your customers and vendors. Includes pre-configured options for cash sales and purchases.",
+        "Keep track of inventory levels with our robust stock management system, helping you maintain optimal stock levels and avoid shortages or overstock.",
     },
     {
-      icon: <Truck className="w-8 h-8 text-blue-600" />,
-      title: "Shipping Management",
+      icon: (
+        <LayoutDashboard className="w-8 h-8 text-blue-600 transition-all duration-300 group-hover:w-10 group-hover:h-10 group-hover:text-blue-700" />
+      ),
+      title: "Simple One Shot Business Dashboard",
       description:
-        "Handle multiple shipping addresses and details for flexible delivery options. Perfect for businesses with diverse logistics needs.",
-    },
-
-    {
-      icon: <BookOpen className="w-8 h-8 text-blue-600" />,
-      title: "Purchase Management",
-      description:
-        "Book and track all your purchases and expenses. Manage input credits and maintain compliance with GST requirements.",
+        "Access all your critical business data in one concise dashboard, providing a clear overview of your financial health and operations at a glance.",
     },
     {
-      icon: <ClipboardList className="w-8 h-8 text-blue-600" />,
-      title: "Document Management",
+      icon: (
+        <ReceiptVoucher className="w-8 h-8 text-blue-600 transition-all duration-300 group-hover:w-10 group-hover:h-10 group-hover:text-blue-700" />
+      ),
+      title: "Credit and Debit Vouchers",
       description:
-        "Generate and maintain multiple copies of invoices, credit notes, and debit notes. Cancel or modify documents as needed.",
+        "Easily create and manage credit and debit vouchers, streamlining your financial transactions and maintaining accurate records.",
+    },
+    {
+      icon: (
+        <TrendingUp className="w-8 h-8 text-blue-600 transition-all duration-300 group-hover:w-10 group-hover:h-10 group-hover:text-blue-700" />
+      ),
+      title: "B2B Sale and Purchase Reports",
+      description:
+        "Generate comprehensive B2B sale and purchase reports, providing detailed insights into your business transactions and helping with strategic decision-making",
+    },
+    {
+      icon: (
+        <PieChart className="w-8 h-8 text-blue-600 transition-all duration-300 group-hover:w-10 group-hover:h-10 group-hover:text-blue-700" />
+      ),
+      title: "Simple Accounting Reports",
+      description:
+        "Access straightforward accounting reports that simplify financial analysis, making it easier to understand your business's financial position.",
     },
   ];
 
@@ -65,7 +75,7 @@ const LandingPage = () => {
           invoice data to GST software and other accounting and IT needs for
           your business.
         </p>
-        <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+        <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg">
           <a href="https://www.gstprime.co.in/">Get Started</a>
         </button>
       </div>
@@ -79,12 +89,16 @@ const LandingPage = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
+              className="group bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 cursor-pointer"
             >
-              <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2 text-gray-900">
-                {feature.title}
-              </h3>
+              <div className="flex items-center mb-4 space-x-3">
+                <div className="transition-transform duration-300 group-hover:scale-110">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 transition-all duration-300 group-hover:text-blue-600 group-hover:scale-105">
+                  {feature.title}
+                </h3>
+              </div>
               <p className="text-gray-600">{feature.description}</p>
             </div>
           ))}
