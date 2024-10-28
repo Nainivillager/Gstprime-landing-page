@@ -2,9 +2,9 @@ import {
   Receipt,
   Boxes,
   LayoutDashboard,
-  Receipt as ReceiptVoucher,
   TrendingUp,
   PieChart,
+  CreditCard,
 } from "lucide-react";
 
 const LandingPage = () => {
@@ -35,7 +35,7 @@ const LandingPage = () => {
     },
     {
       icon: (
-        <ReceiptVoucher className="w-8 h-8 text-blue-600 transition-all duration-300 group-hover:w-10 group-hover:h-10 group-hover:text-blue-700" />
+        <CreditCard className="w-8 h-8 text-blue-600 transition-all duration-300 group-hover:w-10 group-hover:h-10 group-hover:text-blue-700" />
       ),
       title: "Credit and Debit Vouchers",
       description:
